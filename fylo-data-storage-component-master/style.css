@@ -1,13 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    font-family:'Raleway','Times New Roman', Times, serif
-}
-.storage-contain {
-    max-width: 920px
+    box-sizing: border-box;
 }
 
-<style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+.img-card,
+.usage-card {
+    background-color: #1D2C67;
+    border-radius: 10px;
+    color: #DDDBFF;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #DDDBFF;
+}
+
+.fylo-logo {
+    display: block;
+    width: 135px;
+}
+
+.img-button {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: 0;
+    border-radius: 8px;
+    background-color: #0C122C;
+}
+
+.img-button:hover,
+.img-button:focus-visible {
+    background-color: #252F4D;
+}
+
