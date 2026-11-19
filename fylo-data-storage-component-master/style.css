@@ -5,7 +5,7 @@
 }
 
 .img-card,
-.usage-card {
+.status-card {
     background-color: #1D2C67;
     border-radius: 10px;
     color: #DDDBFF;
@@ -34,3 +34,69 @@ body {
     background-color: #252F4D;
 }
 
+.status-card {
+    position: relative;
+}
+
+.status-text {
+    font-size: 14px;
+}
+
+.status-text strong {
+    font-weight: 700;
+}
+
+.storage-bar {
+    height: 20px;
+    padding: 3px;
+    border-radius: 20px;
+    background-color: #151F49;
+}
+
+.storage-progress {
+    width: 81.5%;
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #FFA399, #FF4D97);
+    position: relative;
+}
+
+.storage-progress::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FFFFFF;
+}
+
+.storage-limits {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.storage-remaining {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    height: 72px;
+    padding: 0 24px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    color: #0C122C;
+}
+
+.storage-remaining strong {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.storage-remaining span {
+    color: #848794;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
